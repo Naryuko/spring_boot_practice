@@ -3,12 +3,15 @@ package com.naryu.practice_project.service;
 import com.naryu.practice_project.domain.Member;
 import com.naryu.practice_project.repository.MemberRepository;
 import com.naryu.practice_project.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
     private final MemberRepository memberRepository;
+
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

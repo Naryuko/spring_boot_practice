@@ -1,6 +1,7 @@
 package com.naryu.practice_project.repository;
 
 import com.naryu.practice_project.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
